@@ -1492,11 +1492,8 @@
 /turf/open/floor/iron/dark,
 /area/port_authority/port_authority_areas/security_checkpoint/aft)
 "jt" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/fluff/tram_rail/electric{
-	dir = 1
-	},
-/turf/open/floor/plating,
+/obj/machinery/light/directional/north,
+/turf/open/floor/iron/smooth,
 /area/port_authority/port_authority_areas/evacuation)
 "jA" = (
 /obj/structure/fans/tiny/invisible,
@@ -2043,6 +2040,7 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
 	},
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron/smooth,
 /area/port_authority/port_authority_areas/supply/disposals)
 "nS" = (
@@ -2832,10 +2830,14 @@
 /turf/open/floor/iron/smooth,
 /area/port_authority/port_authority_areas/supply/warehouse)
 "tW" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/mapping_helpers/turn_off_lights_with_lightswitch,
-/turf/open/floor/iron/smooth,
-/area/port_authority/port_authority_areas/supply/warehouse)
+/obj/effect/turf_decal/trimline/yellow/warning{
+	dir = 4
+	},
+/obj/structure/fluff/tram_rail/electric{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/port_authority/port_authority_areas/evacuation)
 "uc" = (
 /obj/machinery/suit_storage_unit/industrial/loader,
 /turf/open/floor/iron/dark,
@@ -3052,7 +3054,8 @@
 	dir = 4;
 	id = "pa-disposals"
 	},
-/turf/open/space/basic,
+/obj/structure/window/reinforced/spawner/directional/south,
+/turf/open/floor/plating,
 /area/port_authority/port_authority_areas/supply/disposals)
 "vE" = (
 /obj/effect/turf_decal/stripes/line{
@@ -3613,7 +3616,9 @@
 "zS" = (
 /obj/effect/turf_decal/tile/brown/fourcorners,
 /obj/effect/turf_decal/stripes/line,
-/turf/open/floor/iron/smooth,
+/turf/closed/indestructible/fakedoor{
+	name = "Disposals Processing"
+	},
 /area/port_authority/port_authority_areas/supply/disposals)
 "zU" = (
 /obj/effect/turf_decal/tile/neutral/fourcorners,
@@ -4254,9 +4259,6 @@
 /turf/open/floor/iron/white,
 /area/centcom/central_command_areas/evacuation/ship)
 "Ew" = (
-/obj/structure/fluff/tram_rail/electric{
-	dir = 1
-	},
 /obj/effect/mapping_helpers/broken_floor,
 /obj/effect/turf_decal/trimline/yellow/warning{
 	dir = 4
@@ -6027,11 +6029,9 @@
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/evacuation/ship)
 "QC" = (
-/obj/structure/fluff/tram_rail/electric{
-	dir = 1
-	},
-/obj/effect/mapping_helpers/broken_floor,
-/turf/open/floor/plating,
+/obj/effect/turf_decal/stripes/full,
+/obj/effect/turf_decal/stripes/red/full,
+/turf/open/floor/iron/dark,
 /area/port_authority/port_authority_areas/evacuation)
 "QF" = (
 /obj/effect/turf_decal/siding/wood{
@@ -6224,12 +6224,9 @@
 /turf/open/floor/iron/smooth_large,
 /area/centcom/central_command_areas/evacuation/ship)
 "SE" = (
-/obj/effect/spawner/random/structure/crate,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/delivery,
-/obj/machinery/light/blacklight/directional/south,
+/obj/machinery/light/directional/south,
 /turf/open/floor/iron/dark,
-/area/port_authority/port_authority_areas/supply/warehouse)
+/area/port_authority/port_authority_areas/supply/auxiliary)
 "SG" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -6246,10 +6243,9 @@
 /turf/open/floor/iron/smooth,
 /area/port_authority/port_authority_areas/supply/warehouse)
 "SP" = (
-/obj/effect/turf_decal/stripes/line,
 /obj/machinery/light/directional/north,
-/turf/open/floor/iron/smooth,
-/area/port_authority/port_authority_areas/evacuation)
+/turf/open/floor/iron/dark,
+/area/port_authority/port_authority_areas/supply/auxiliary)
 "SQ" = (
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /obj/effect/turf_decal/tile/red/anticorner/contrasted,
@@ -6665,11 +6661,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/evacuation/ship)
-"WI" = (
-/obj/effect/turf_decal/stripes/full,
-/obj/effect/turf_decal/stripes/red/full,
-/turf/open/floor/iron/dark,
-/area/port_authority/port_authority_areas/evacuation)
 "WN" = (
 /obj/machinery/door/airlock/centcom{
 	name = "Port Authority Supervisory"
@@ -6717,7 +6708,7 @@
 /obj/effect/turf_decal/tile/brown/half/contrasted{
 	dir = 8
 	},
-/obj/machinery/light/blacklight/directional/west,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron/smooth,
 /area/port_authority/port_authority_areas/evacuation)
 "Xj" = (
@@ -58169,7 +58160,7 @@ le
 pd
 pd
 pd
-vt
+WN
 pd
 pd
 pd
@@ -60225,7 +60216,7 @@ lZ
 pd
 pd
 pd
-vt
+WN
 pd
 pd
 pd
@@ -60682,6 +60673,7 @@ aa
 aa
 aa
 aa
+ou
 JO
 JO
 JO
@@ -60690,8 +60682,7 @@ JO
 JO
 JO
 JO
-JO
-JO
+yn
 JO
 JO
 JO
@@ -60939,7 +60930,7 @@ aa
 aa
 aa
 aa
-JO
+ou
 JO
 JO
 JO
@@ -61196,7 +61187,7 @@ aa
 aa
 aa
 aa
-JO
+ou
 JO
 JO
 JO
@@ -61718,9 +61709,9 @@ AC
 AH
 ml
 ou
+SP
 JO
-JO
-JO
+SE
 ou
 Vl
 AH
@@ -63537,7 +63528,7 @@ Ot
 ig
 KP
 NO
-wR
+NO
 NT
 xb
 aV
@@ -64031,9 +64022,9 @@ ou
 ou
 ou
 ou
+SP
 JO
-JO
-JO
+SE
 ou
 ou
 ou
@@ -65858,14 +65849,14 @@ jd
 kB
 kB
 kB
-kB
+jd
 kB
 kB
 kB
 jd
 kB
 kB
-kB
+jd
 kB
 kB
 ir
@@ -66344,9 +66335,9 @@ hy
 AH
 ml
 ou
+SP
 JO
-JO
-JO
+SE
 ou
 Vl
 AH
@@ -66613,7 +66604,7 @@ tI
 Nk
 ou
 tU
-tW
+EA
 jE
 PK
 tU
@@ -66850,7 +66841,7 @@ aa
 aa
 aa
 aa
-aa
+ou
 JO
 JO
 JO
@@ -66887,8 +66878,8 @@ bR
 nF
 Vc
 Vc
-NP
 Vc
+NP
 uh
 TS
 kB
@@ -67107,7 +67098,7 @@ aa
 aa
 aa
 aa
-aa
+ou
 JO
 JO
 JO
@@ -67144,13 +67135,13 @@ iL
 VB
 mk
 pQ
-cY
 pQ
+cY
 da
 BK
 kB
 kB
-kB
+jd
 kB
 kB
 ir
@@ -67364,7 +67355,7 @@ aa
 aa
 aa
 aa
-aa
+ou
 JO
 JO
 JO
@@ -67401,8 +67392,8 @@ iL
 VB
 pQ
 pQ
-cY
 pQ
+cY
 da
 TS
 kB
@@ -67621,24 +67612,24 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+ou
+ou
+ou
+ou
+ou
+ou
+ou
+ou
+ou
+ou
+ou
+ou
+ou
+ou
+ou
+ou
+ou
+ou
 Sr
 tU
 Jl
@@ -67658,8 +67649,8 @@ iL
 VB
 pQ
 pQ
-Iw
-pQ
+mk
+cY
 da
 Kq
 av
@@ -67915,8 +67906,8 @@ iL
 VB
 KU
 mk
-cY
 pQ
+cY
 da
 tm
 Xn
@@ -68172,8 +68163,8 @@ iL
 VB
 pQ
 pQ
-cY
 pQ
+cY
 da
 tm
 Xn
@@ -68429,8 +68420,8 @@ vH
 ru
 pQ
 pQ
-cY
 pQ
+cY
 da
 UT
 Xn
@@ -68686,8 +68677,8 @@ iL
 VB
 pQ
 pQ
-jt
 pQ
+cY
 da
 tm
 Xn
@@ -68928,7 +68919,7 @@ Sr
 Em
 Vg
 hG
-SE
+hA
 SO
 xk
 zn
@@ -68943,8 +68934,8 @@ iL
 VB
 pQ
 pQ
-cY
 pQ
+cY
 da
 tm
 Xn
@@ -69200,8 +69191,8 @@ iL
 VB
 pQ
 mk
-cY
 pQ
+cY
 da
 tm
 Xn
@@ -69457,8 +69448,8 @@ iL
 VB
 pQ
 pQ
-cY
 pQ
+cY
 da
 tm
 Xn
@@ -69715,7 +69706,7 @@ PI
 us
 us
 Ew
-us
+tW
 Sl
 tq
 Xn
@@ -69971,8 +69962,8 @@ pQ
 Gf
 mk
 ip
-cY
-mk
+pQ
+Iw
 pQ
 tm
 Xn
@@ -70228,8 +70219,8 @@ pQ
 Gf
 pQ
 pQ
-QC
 mk
+Iw
 pQ
 tm
 Xn
@@ -70485,8 +70476,8 @@ pQ
 Gf
 pQ
 pQ
-cY
-mk
+pQ
+Iw
 pQ
 tm
 Xn
@@ -70742,15 +70733,15 @@ mk
 VB
 mk
 pQ
-QC
-pQ
+mk
+cY
 pQ
 tm
 Xn
 Xn
 XR
-WI
-WI
+QC
+QC
 Sq
 HM
 CJ
@@ -70999,15 +70990,15 @@ pQ
 Gf
 pQ
 pQ
-QC
-pQ
+mk
+cY
 pQ
 tq
 Xn
 Xn
 XR
-WI
-WI
+QC
+QC
 Sq
 jd
 CJ
@@ -71256,15 +71247,15 @@ pQ
 Gf
 pQ
 pQ
-cY
 pQ
+cY
 pQ
 aH
 Xn
 Xn
 Pr
-WI
-WI
+QC
+QC
 oi
 Bl
 CJ
@@ -71523,7 +71514,7 @@ Bm
 pP
 pP
 Bm
-Bm
+kB
 CJ
 pQ
 pQ
@@ -71780,8 +71771,8 @@ Bm
 TC
 bV
 Bm
-Bm
-SP
+jt
+CJ
 pQ
 pQ
 VB
@@ -72037,7 +72028,7 @@ Bm
 bV
 DE
 Bm
-Bm
+kB
 CJ
 pQ
 pQ
@@ -72550,7 +72541,7 @@ Bm
 Bm
 Bm
 Bm
-aa
+lZ
 aa
 aa
 aa

@@ -6810,6 +6810,7 @@
 #include "modular_doppler\modular_antagonists\sapper_gang\code\creditminer.dm"
 #include "modular_doppler\modular_antagonists\sapper_gang\code\paper_premade.dm"
 #include "modular_doppler\modular_antagonists\sapper_gang\code\sapperpad.dm"
+#include "modular_doppler\modular_areas\code\port_authority.dm"
 #include "modular_doppler\modular_cosmetics\toggle_clothes.dm"
 #include "modular_doppler\modular_cosmetics\code\clothing_overrides.dm"
 #include "modular_doppler\modular_cosmetics\code\garment_bag_overrides.dm"
